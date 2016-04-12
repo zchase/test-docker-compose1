@@ -9,6 +9,8 @@ bmcgehee/test-docker-compose1:
   PreInstall:
     - sudo docker login -u "$DISTELLI_DOCKER_USERNAME" -p "$DISTELLI_DOCKER_PW" -e "$DISTELLI_DOCKER_EMAIL" "$DISTELLI_DOCKER_ENDPOINT"
   Exec:
+    - pwd
+    - ls -l
     - sudo /usr/local/bin/docker-compose up
   PostStart:
     - publicip=$(curl -s ident.me) || true
