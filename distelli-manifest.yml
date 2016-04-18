@@ -1,4 +1,4 @@
-bmcgehee/test-docker-compose1:
+zchase/test-docker-compose1:
   Build:
     - echo "Nothing to build"
   PkgInclude:
