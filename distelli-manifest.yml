@@ -2,7 +2,7 @@ zchase/test-docker-compose1:
   PkgInclude:
     - '*'
   PreInstall:
-    - sudo docker login -u "$DISTELLI_DOCKER_USERNAME" -p "$DISTELLI_DOCKER_PW" -e "$DISTELLI_DOCKER_EMAIL"
+    #- sudo docker login -u "$DISTELLI_DOCKER_USERNAME" -p "$DISTELLI_DOCKER_PW" -e "$DISTELLI_DOCKER_EMAIL"
   Exec:
     - cd $DISTELLI_INSTALLHOME
     - sudo /usr/local/bin/docker-compose up
