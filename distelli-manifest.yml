@@ -6,6 +6,3 @@ zchase/test-docker-compose1:
   Exec:
     - cd $DISTELLI_INSTALLHOME
     - sudo /usr/local/bin/docker-compose up
-  PostStart:
-    - docker ps 
-    - echo "Mom help. Docker Compose is bullshit"
