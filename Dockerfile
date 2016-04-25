@@ -1,2 +1,2 @@
-FROM orchardup/php5
+FROM wordpress:4.5.0
 ADD . /code

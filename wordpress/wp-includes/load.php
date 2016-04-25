@@ -500,7 +500,7 @@ function wp_not_installed() {
 		require( ABSPATH . WPINC . '/pluggable.php' );
 		require( ABSPATH . WPINC . '/formatting.php' );
 
-		$link = wp_guess_url() . '/wp-signup.php';
+		$link = wp_guess_url() . '/wp-admin/install.php';
 
 		wp_redirect( $link );
 		die();
